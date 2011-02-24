@@ -1,0 +1,11 @@
+%h1
+  results for
+  %span#filename= @filename
+
+#warnings.section= issue_table :warnings, @warnings
+#errors.section= issue_table :errors, @errors
+#fatals.section= issue_table :fatals, @fatals
+
+%hr
+
+%a(href='/') home

@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+#filename {
+  color: limegreen;
+}
+
+.section {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+th {
+  white-space: nowrap;
+  text-align: left;
+}
+
+th {
+  /*color: limegreen;*/
+  color: dodgerblue;
+  padding: 1ex;
+  margin: 1ex;
+}
+
+
+td {
+  color: white;
+  padding: 1ex;
+  margin: 1ex;
+  text-align: center;
+}
+
+tr:not(:first-child) {
+  background-color: dodgerblue;
+}
+
+input {
+  color:inherit;
+  background-color:inherit;
+  font-size: 18pt;
+}
+
+input[type='submit'] {
+  border: thin dodgerblue solid;
+}
+
+form div {
+  padding: 3ex;
+  margin: 3ex;
+}

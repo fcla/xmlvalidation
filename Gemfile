@@ -1,7 +1,11 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
-gem 'rjb'
-gem 'capybara'
-gem 'rspec'
-gem 'fuubar'
+gem 'haml'
+gem 'mongrel'
+
+group :test do
+  gem 'capybara'
+  gem 'rspec'
+  gem 'fuubar'
+end

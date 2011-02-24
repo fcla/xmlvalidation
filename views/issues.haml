@@ -1,0 +1,22 @@
+%h2
+  = name
+  &colon;
+  = issues.size
+
+- unless issues.empty?
+  %table
+
+    %tr
+      %th public id
+      %th system id
+      %th line
+      %th column
+      %th message
+
+    - issues.each do |i|
+      %tr
+        %td.public_id= i[:public_id]
+        %td.system_id= i[:system_id] == "file://#{@path}" ? @filename : i[:system_id]
+        %td.line= i[:line]
+        %td.column= i[:column]
+        %td.message= i[:message]
